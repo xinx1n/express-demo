@@ -47,4 +47,5 @@ app.get('/download/:file', function(req, res) {
 	res.download(path.join(__dirname, 'upload')+"/"+file);
   // res.download(path.join(__dirname, 'upload')+"/"+"OmegaOptions-1489315296611.bak");
 });
+console.log('已监听：'+ app.get('port'))
 app.listen(app.get('port'));
